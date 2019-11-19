@@ -11,12 +11,12 @@ var path = require ('path')
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(express.static('../public'))
-app.get('/',function(req,res){
+/*app.get('/',function(req,res){
   res.sendFile(path.join(__dirname+'../../public/index.html'))
 
-})
+})*/
 
-app.use('/bdjson', routing)
+//app.use('/bdjson', routing)
 Server.listen(port, () => {
   console.log("Servidor corriendo en el puerto: " + port)
 })
